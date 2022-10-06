@@ -2,7 +2,7 @@
 
 Some movie and episode management applications, such as Infuse, Plex, can automatically match episode metadata from TMDB, but require episodes to have canonical names. This tool will rename episodes to match the [canonical names](https://support.firecore.com/hc/en-us/articles/215090947-Metadata-101#heading-3).
 
-TMDB Renamer can be used directly after installation without additional configuration
+TMDB Renamer can be used directly after installation without additional configuration.
 
 ## Installation
 
