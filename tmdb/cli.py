@@ -28,7 +28,7 @@ def cli():
     "--dir",
     "-d",
     type=str,
-    required=False,
+    required=True,
     help="Local TV Series Folder Path.",
     metavar="<folder_path>",
 )
