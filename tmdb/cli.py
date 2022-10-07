@@ -89,7 +89,7 @@ def tv(url, dir):
         if len(file_names) != season_episode_count:
             # File Count Mismatch
             print(
-                f"[yellow bold]✕ Mismatch between the number of local files and the Episodes[/yellow bold]"
+                f"[yellow bold]✕ Mismatch between the number of local files and the Episodes.[/yellow bold]"
             )
             episode_start = Prompt.ask(
                 "[green]→[/green] Please Enter the Start Episode Number:",

@@ -18,6 +18,7 @@ Show help message:
 
 ```bash
 $ tmdb tv -h
+
 Usage: tmdb tv [OPTIONS]
 
 Options:
@@ -38,6 +39,7 @@ Step 2: Using the `tree` command to list the files in a demo directory:
 
 ```bash
 $ tree test_folder/
+
 test_folder/
 ├── 01.mp4
 ├── 02.mp4
@@ -54,6 +56,7 @@ Step 3: Run the `tmdb-renamer` command:
 
 ```bash
 $ tmdb tv --url https://www.themoviedb.org/tv/83867-star-wars-andor --dir test_folder/
+
                Star Wars: Andor
 ┏━━━━━━━┳━━━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━┓
 ┃ Index ┃ Season Name ┃  Air Date  ┃ Episodes ┃
@@ -63,8 +66,10 @@ $ tmdb tv --url https://www.themoviedb.org/tv/83867-star-wars-andor --dir test_f
 └───────┴─────────────┴────────────┴──────────┘
 → Please Select a Season Index: [0/1] (1):
 ✓ Season Selected: Star Wars: Andor.S01
-✕ Mismatch between the number of local files and the Episodes
+
+✕ Mismatch between the number of local files and the Episodes.
 → Please Enter the Start Episode Number: [1/2/3/4/5/6] (1):
+
 → Please Check the Files to be Renamed:
 01.mp4 → Star Wars Andor.S01.E01.mp4
 02.mp4 → Star Wars Andor.S01.E02.mp4
@@ -73,8 +78,10 @@ $ tmdb tv --url https://www.themoviedb.org/tv/83867-star-wars-andor --dir test_f
 05.mp4 → Star Wars Andor.S01.E05.mp4
 06.mp4 → Star Wars Andor.S01.E06.mp4
 07.mp4 → Star Wars Andor.S01.E07.mp4
+
 → Do you want to rename the files? [Y/n]:
 ✓ 7 Files Renamed.
+
 → Do you want to rename the folder? [Y/n]:
 ✓ Folder Renamed: test_folder/ → Star Wars Andor.S01
 ```
@@ -83,6 +90,7 @@ Step 4: Checking the files are renamed:
 
 ```bash
 $ tree Star\ Wars\ Andor.S01/
+
 Star Wars Andor.S01/
 ├── Star Wars Andor.S01.E01.mp4
 ├── Star Wars Andor.S01.E02.mp4
