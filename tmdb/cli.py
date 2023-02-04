@@ -36,7 +36,7 @@ def tv(url, dir):
     try:
         tv = TMDB().get_tv(tv_url=url)
         # TMDB Data Processing
-        tv_name = tv["name"]
+        tv_name = tv["name"].replace(" ", ".").replace("-", ".").replace(":", "")
         tv_seasons = tv["seasons"]
         if len(tv_seasons) > 1:
             # Multiple Seasons
